@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Allied Scout — Occupational Rehabilitation & Allied Health Recruitment Australia</title>
-<meta name="description" content="Allied Scout is Australia's specialist recruiter for occupational rehabilitation and allied health professionals. Perth-based, placing nationally. Free replacement guarantee.">
+<meta name="description" content="Allied Scout is Australia's specialist recruiter for occupational rehabilitation and allied health professionals. Perth-based, placing nationally.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <style>
@@ -222,7 +222,7 @@ nav{
 /* ── HERO ── */
 .hero-section{
   padding:80px 56px 0;
-  display:grid;grid-template-columns:1fr 440px;
+  display:grid;grid-template-columns:1fr;max-width:800px;margin:0 auto;
   gap:48px;align-items:center;
   max-width:1200px;margin:0 auto;
   min-height:calc(100vh - 70px);
@@ -616,8 +616,8 @@ nav{
 .ch-stat-l{font-size:13px;color:rgba(255,255,255,0.35);margin-top:4px;}
 
 .contact-body{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:20px;margin:0 56px 56px;
+  display:grid;grid-template-columns:1fr;
+  gap:20px;margin:0 56px 56px;max-width:600px;
 }
 .form-card{
   background:var(--white);border:1px solid var(--border);
@@ -680,7 +680,7 @@ nav{
   .hero-stats{grid-template-columns:1fr 1fr;}
   .feat-row,.feat-row.r{grid-template-columns:1fr;direction:ltr;gap:36px;}
   .how-steps-grid,.why-points,.spec-grid{grid-template-columns:1fr 1fr;}
-  .blog-grid,.blog-full-grid{grid-template-columns:1fr 1fr;}
+  
   .contact-body,.why-hero-card{grid-template-columns:1fr;}
   .form-row{grid-template-columns:1fr;}
   .testimonial-card,.tc-badge,.sf-grid{grid-template-columns:1fr;}
@@ -689,9 +689,9 @@ nav{
 @media(max-width:768px){
   nav{padding:0 20px;}
   .nav-links{display:none;}
-  .hero-section,.land,.land-bg,.land-dark,.testimonial-section,.blog-section,.bottom-cta{padding:60px 20px;}
+  .hero-section,.land,.land-bg,.land-dark,.testimonial-section,.bottom-cta{padding:60px 20px;}
   .page-hero,.why-hero-card,.contact-hero{margin:20px;padding:36px;}
-  .how-steps-grid,.why-points,.spec-grid,.guarantee-block,.cta-strip,.testimonial-card,.contact-body,.blog-full-grid,.blog-header,.sf-grid{margin-left:20px;margin-right:20px;grid-template-columns:1fr;}
+  .how-steps-grid,.why-points,.spec-grid,.guarantee-block,.cta-strip,.testimonial-card,.contact-body,.sf-grid{margin-left:20px;margin-right:20px;grid-template-columns:1fr;}
   .hero-chip-a,.hero-chip-b{display:none;}
   .guarantee-block{flex-direction:column;gap:20px;padding:28px;}
   .cta-strip{flex-direction:column;padding:28px;}
@@ -726,7 +726,7 @@ nav{
     <li><button id="nb-how" onclick="go('how')">How It Works</button></li>
     <li><button id="nb-specialisms" onclick="go('specialisms')">Specialisms</button></li>
     <li><button id="nb-why" onclick="go('why')">Why Us</button></li>
-    <li><button id="nb-blog" onclick="go('blog')">Blog</button></li>
+    
     <li><button id="nb-contact" onclick="go('contact')">Contact</button></li>
   </ul>
 
@@ -744,7 +744,7 @@ nav{
       <div class="hero-tag">
         <span class="tag tag-teal">
           <span class="tag-dot"></span>
-          OC Rehab &amp; Allied Health · Perth, WA · Placing Nationally
+          OC Rehab &amp; Allied Health · Perth, WA · Free Replacement Guarantee
         </span>
       </div>
       <h1 class="h-hero hero-h1">
@@ -758,55 +758,15 @@ nav{
         <button class="btn btn-teal btn-lg" onclick="go('contact')">Find Me Talent →</button>
         <button class="btn btn-ghost btn-lg" onclick="go('how')">See How It Works</button>
       </div>
-      <div class="hero-stats">
-        <div class="hstat">
-          <div class="hstat-n">48<em>hr</em></div>
-          <div class="hstat-l">Average shortlist time</div>
-        </div>
-        <div class="hstat">
-          <div class="hstat-n">OC<em> only</em></div>
-          <div class="hstat-l">Pure niche specialist</div>
-        </div>
-        <div class="hstat">
-          <div class="hstat-n">0<em>$</em></div>
-          <div class="hstat-l">Cost if we can't deliver</div>
-        </div>
       </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="hero-card">
-        <div class="hero-chip-a"><div class="chip-n">48hr</div><div class="chip-l">Avg. shortlist</div></div>
-        <div class="hero-chip-b"><div class="chip-n">0$</div><div class="chip-l">If we can't place</div></div>
-        <div class="hero-card-label">
-          <span>Roles Currently Being Filled</span>
-          <span class="hero-live"><span class="live-dot"></span>Live</span>
-        </div>
-        <div class="role-list">
-          <div class="role-item"><div class="role-dot" style="background:var(--teal)"></div><span class="role-name">Rehabilitation Consultants</span><span class="role-badge rb-teal">Open</span></div>
-          <div class="role-item"><div class="role-dot" style="background:var(--coral)"></div><span class="role-name">Occupational Therapists</span><span class="role-badge rb-coral">Active</span></div>
-          <div class="role-item"><div class="role-dot" style="background:var(--teal)"></div><span class="role-name">Injury Management Advisors</span><span class="role-badge rb-teal">Open</span></div>
-          <div class="role-item"><div class="role-dot" style="background:var(--teal)"></div><span class="role-name">Employment Consultants</span><span class="role-badge rb-teal">Open</span></div>
-          <div class="role-item"><div class="role-dot" style="background:var(--coral)"></div><span class="role-name">Exercise Scientists / AEPs</span><span class="role-badge rb-coral">Active</span></div>
-          <div class="role-item"><div class="role-dot" style="background:var(--teal)"></div><span class="role-name">Psychologists</span><span class="role-badge rb-teal">Open</span></div>
-        </div>
-        <div class="guarantee-strip">
-          <div class="gs-icon">🛡️</div>
-          <div class="gs-text">
-            <strong>Free Replacement Guarantee</strong>
-            <span>Can't place the right fit? We replace at zero extra cost.</span>
-          </div>
-          <button class="btn btn-ghost-white btn-sm gs-btn" onclick="go('how')">More →</button>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- ── MARQUEE ── -->
   <div class="marquee-section">
     <div class="marquee-track">
-      <span class="mi">Rehabilitation Consultants</span><span class="mi">Occupational Therapists</span><span class="mi">Injury Management Advisors</span><span class="mi">Exercise Scientists</span><span class="mi">Employment Consultants</span><span class="mi">Psychologists</span><span class="mi">Rehab Counsellors</span><span class="mi">Physiotherapists</span><span class="mi">Return-to-Work Coordinators</span>
-      <span class="mi">Rehabilitation Consultants</span><span class="mi">Occupational Therapists</span><span class="mi">Injury Management Advisors</span><span class="mi">Exercise Scientists</span><span class="mi">Employment Consultants</span><span class="mi">Psychologists</span><span class="mi">Rehab Counsellors</span><span class="mi">Physiotherapists</span><span class="mi">Return-to-Work Coordinators</span>
+      <span class="mi">Rehabilitation Consultants</span><span class="mi">Occupational Therapists</span><span class="mi">Injury Management Advisors</span><span class="mi">Exercise Physiologists</span><span class="mi">Employment Consultants</span><span class="mi">Psychologists</span><span class="mi">Rehab Counsellors</span><span class="mi">Physiotherapists</span><span class="mi">Return-to-Work Coordinators</span>
+      <span class="mi">Rehabilitation Consultants</span><span class="mi">Occupational Therapists</span><span class="mi">Injury Management Advisors</span><span class="mi">Exercise Physiologists</span><span class="mi">Employment Consultants</span><span class="mi">Psychologists</span><span class="mi">Rehab Counsellors</span><span class="mi">Physiotherapists</span><span class="mi">Return-to-Work Coordinators</span>
     </div>
   </div>
 
@@ -828,7 +788,7 @@ nav{
             <div class="role-pill"><span class="rp-dot"></span>Occupational Therapists</div>
             <div class="role-pill"><span class="rp-dot"></span>Injury Mgmt Advisors</div>
             <div class="role-pill"><span class="rp-dot"></span>Employment Consultants</div>
-            <div class="role-pill"><span class="rp-dot"></span>Exercise Scientists</div>
+            <div class="role-pill"><span class="rp-dot"></span>Exercise Physiologists</div>
             <div class="role-pill"><span class="rp-dot"></span>Psychologists</div>
             <div class="role-pill"><span class="rp-dot"></span>Rehab Counsellors</div>
             <div class="role-pill"><span class="rp-dot"></span>Physiotherapists</div>
@@ -846,7 +806,7 @@ nav{
       <div class="feat-text">
         <div class="eyebrow">How It Works</div>
         <h2 class="h-section">Three steps. <em>That's genuinely it.</em></h2>
-        <p class="body-lg">You brief us on the role. We search our national OC rehab network. You receive a curated shortlist of pre-screened candidates — ready to interview. Most shortlists delivered within 48 hours.</p>
+        <p class="body-lg">You brief us on the role. We search our national OC rehab network. You receive a curated shortlist of candidates we've spoken to and assessed — ready for you to interview.</p>
         <p class="body-md">Fees are discussed directly — not listed on the website because every engagement is different. No surprises.</p>
         <button class="btn btn-teal btn-md" onclick="go('how')">Full process →</button>
       </div>
@@ -859,7 +819,7 @@ nav{
             </div>
             <div class="ps-item">
               <div class="ps-num">02</div>
-              <div><div class="ps-title">We find the people</div><div class="ps-body">Personal outreach to our national OC rehab network. Active and passive candidates. Shortlist in 48hrs.</div></div>
+              <div><div class="ps-title">We find the people</div><div class="ps-body">Personal outreach to our national OC rehab network — active and passive candidates.</div></div>
             </div>
             <div class="ps-item">
               <div class="ps-num">03</div>
@@ -882,10 +842,8 @@ nav{
         <button class="btn btn-ghost btn-md" onclick="go('why')">Our full story →</button>
       </div>
       <div>
-        <div class="stats-grid">
-          <div class="sg-item accent"><div class="sg-n">48<em>hr</em></div><div class="sg-l">Average shortlist delivery</div></div>
-          <div class="sg-item"><div class="sg-n" style="color:var(--navy);font-size:26px;">OC only</div><div class="sg-l">One sector, done properly</div></div>
-          <div class="sg-item"><div class="sg-n">0<em>$</em></div><div class="sg-l">Cost if we can't deliver</div></div>
+        <div class="stats-grid" style="grid-template-columns:1fr 1fr;">
+          <div class="sg-item accent"><div class="sg-n" style="font-size:26px;">OC only</div><div class="sg-l">One sector, done properly</div></div>
           <div class="sg-item"><div class="sg-n">8<em>+</em></div><div class="sg-l">Allied health specialisms covered</div></div>
         </div>
       </div>
@@ -918,63 +876,11 @@ nav{
     </div>
   </section>
 
-  <!-- ── TESTIMONIALS ── -->
-  <section class="testimonial-section reveal">
-    <div class="eyebrow ts-eyebrow">What Clients Say</div>
-    <blockquote class="ts-quote">"Every other recruiter sent us generalists who'd never heard of a Rehab Consultant. Allied Scout sent us three people worth interviewing within two days — all with exactly the right background and experience."</blockquote>
-    <div class="ts-author">
-      <strong>Sarah Mitchell</strong>
-      <span>Operations Manager — Occupational Rehabilitation Provider, Perth WA</span>
-    </div>
-
-    <!-- Placeholder for more testimonials -->
-    <div class="placeholder" style="max-width:600px;margin:48px auto 0;">
-      <div class="placeholder-label">Placeholder — More Testimonials</div>
-      <div class="placeholder-desc">Additional client testimonials to be added once collected from Martin's network and early clients.</div>
-    </div>
-  </section>
-
-  <!-- ── BLOG PREVIEW ── -->
-  <section class="blog-section reveal">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:12px;flex-wrap:wrap;gap:16px;">
-      <div>
-        <div class="eyebrow" style="margin-bottom:8px;">Resources &amp; Insights</div>
-        <h2 class="h-section" style="font-size:clamp(28px,3vw,40px);">Helpful guides for <em>rehab providers</em></h2>
-      </div>
-      <button class="btn btn-ghost btn-md" onclick="go('blog')">View All Articles →</button>
-    </div>
-    <div class="blog-grid">
-      <div class="blog-card">
-        <div class="blog-img"><div class="blog-img-placeholder">[ Article Image Placeholder ]</div></div>
-        <div class="blog-body">
-          <div class="blog-tag">Hiring Advice</div>
-          <div class="blog-title">How to Write a Brief That Gets You the Right Rehab Consultant</div>
-          <div class="blog-excerpt">A good brief saves weeks. Here's exactly what to include when engaging a specialist recruiter for your OC rehab team.</div>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-img"><div class="blog-img-placeholder">[ Article Image Placeholder ]</div></div>
-        <div class="blog-body">
-          <div class="blog-tag">Market Insights</div>
-          <div class="blog-title">The OT Shortage in Australia: What Rehab Providers Need to Know in 2025</div>
-          <div class="blog-excerpt">Demand for Occupational Therapists is outpacing supply. Here's what's driving it and how to position your practice to attract talent.</div>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-img"><div class="blog-img-placeholder">[ Article Image Placeholder ]</div></div>
-        <div class="blog-body">
-          <div class="blog-tag">WorkCover</div>
-          <div class="blog-title">WorkCover WA vs National Schemes: Implications for Allied Health Hiring</div>
-          <div class="blog-excerpt">Different schemes mean different role requirements. Understanding the landscape helps you hire faster and with better fit.</div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ── BOTTOM CTA ── -->
   <div class="bottom-cta reveal">
     <h2>Ready to stop posting ads<br>and <em>start interviewing?</em></h2>
-    <p>Tell us the role and what good looks like. We'll come back with a curated shortlist — not a job board listing.</p>
+    <p>Tell us the role and what you're looking for. We'll do the searching — you focus on running your practice.</p>
     <div class="bottom-cta-btns">
       <button class="btn btn-teal btn-lg" onclick="go('contact')">Get in Touch →</button>
       <button class="btn btn-ghost-white btn-lg" onclick="go('specialisms')">View All Specialisms</button>
@@ -995,26 +901,26 @@ nav{
           <li onclick="go('how')">How It Works</li>
           <li onclick="go('specialisms')">Specialisms</li>
           <li onclick="go('why')">Why Allied Scout</li>
-          <li onclick="go('blog')">Blog &amp; Resources</li>
+          
           <li onclick="go('contact')">Contact</li>
         </ul>
       </div>
       <div class="sf-col">
         <h5>Specialisms</h5>
         <ul>
-          <li>Rehabilitation Consultants</li>
-          <li>Occupational Therapists</li>
-          <li>Injury Mgmt Advisors</li>
-          <li>Employment Consultants</li>
-          <li>Exercise Scientists</li>
-          <li>Psychologists</li>
+          <li onclick="go('specialisms')" style="cursor:pointer;">Rehabilitation Consultants</li>
+          <li onclick="go('specialisms')" style="cursor:pointer;">Occupational Therapists</li>
+          <li onclick="go('specialisms')" style="cursor:pointer;">Injury Mgmt Advisors</li>
+          <li onclick="go('specialisms')" style="cursor:pointer;">Employment Consultants</li>
+          <li onclick="go('specialisms')" style="cursor:pointer;">Exercise Physiologists</li>
+          <li onclick="go('specialisms')" style="cursor:pointer;">Psychologists</li>
         </ul>
       </div>
       <div class="sf-col">
         <h5>Contact</h5>
         <ul>
-          <li>hello@alliedscout.com.au</li>
-          <li>0400 000 000</li>
+          <li>contact@alliedscout.com.au</li>
+          
           <li>Perth, Western Australia</li>
           <li>Australia-wide placements</li>
         </ul>
@@ -1062,7 +968,7 @@ nav{
       <div class="step-num">Step 03</div>
       <div class="step-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4.5 4.5 9.5-9" stroke="#009688" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="#009688" stroke-width="1.5"/></svg></div>
       <h3>You interview &amp; hire</h3>
-      <p>A curated shortlist — every candidate personally screened and interviewed by us before you see them. You receive 3–5 people genuinely worth your time. You meet them, you choose. Clean, fast, no wasted effort.</p>
+      <p>A curated shortlist — every candidate personally screened by us before you see them. You meet the candidates we've assessed. You choose. No wasted time on unsuitable applications.</p>
     </div>
   </div>
 
@@ -1070,7 +976,7 @@ nav{
     <div class="gb-icon"><svg viewBox="0 0 36 36" fill="none"><path d="M18 3L3 10v7c0 9.5 6.5 18 15 21 8.5-3 15-11.5 15-21v-7L18 3z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/><path d="M12 18l4.5 4.5 8-9" stroke="#009688" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
     <div>
       <h2>Free Replacement Guarantee</h2>
-      <p>If a placement doesn't work out, we find a replacement at no additional charge. No fine print, no difficult conversations — this is how we hold ourselves accountable to every client we work with. It's the commitment that separates us from every other recruiter in the sector, and the reason clients keep coming back.</p>
+      <p>If a placement doesn't work out, we'll work with you to find a replacement at no additional charge. No fine print, no awkward conversations.</p>
       <div class="g-pill"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No fine print · No questions asked</div>
     </div>
   </div>
@@ -1078,9 +984,9 @@ nav{
   <footer class="site-footer">
     <div class="sf-grid">
       <div><div class="sf-brand-name">Allied<em>Scout</em></div><div class="sf-brand-sub">Recruitment Specialists</div><p class="sf-brand-desc">Australia's specialist recruiter for occupational rehabilitation and allied health. Perth-based, placing nationally.</p></div>
-      <div class="sf-col"><h5>Pages</h5><ul><li onclick="go('home')">Home</li><li onclick="go('specialisms')">Specialisms</li><li onclick="go('why')">Why Us</li><li onclick="go('blog')">Blog</li><li onclick="go('contact')">Contact</li></ul></div>
-      <div class="sf-col"><h5>Specialisms</h5><ul><li>Rehabilitation Consultants</li><li>Occupational Therapists</li><li>Injury Mgmt Advisors</li><li>Employment Consultants</li><li>Exercise Scientists</li><li>Psychologists</li></ul></div>
-      <div class="sf-col"><h5>Contact</h5><ul><li>hello@alliedscout.com.au</li><li>0400 000 000</li><li>Perth, WA</li><li>Australia-wide</li></ul></div>
+      <div class="sf-col"><h5>Pages</h5><ul><li onclick="go('home')">Home</li><li onclick="go('specialisms')">Specialisms</li><li onclick="go('why')">Why Us</li><li onclick="go('contact')">Contact</li></ul></div>
+      <div class="sf-col"><h5>Specialisms</h5><ul><li onclick="go('specialisms')" style="cursor:pointer;">Rehabilitation Consultants</li><li onclick="go('specialisms')" style="cursor:pointer;">Occupational Therapists</li><li onclick="go('specialisms')" style="cursor:pointer;">Injury Mgmt Advisors</li><li onclick="go('specialisms')" style="cursor:pointer;">Employment Consultants</li><li onclick="go('specialisms')" style="cursor:pointer;">Exercise Physiologists</li><li onclick="go('specialisms')" style="cursor:pointer;">Psychologists</li></ul></div>
+      <div class="sf-col"><h5>Contact</h5><ul><li>contact@alliedscout.com.au</li><li>Perth, WA</li><li>Australia-wide</li></ul></div>
     </div>
     <div class="sf-bottom"><span>© 2025 Allied Scout. All rights reserved.</span><span>Perth, WA · Australia-wide</span></div>
   </footer>
@@ -1106,7 +1012,7 @@ nav{
     <div class="spec-card"><div class="sc-icon"><svg viewBox="0 0 21 21" fill="none"><path d="M10.5 1.5a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" stroke="#009688" stroke-width="1.5"/><path d="M2 19c0-4 3.5-7 8.5-7s8.5 3 8.5 7" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Occupational Therapists</h3><p>OTs in functional assessments, workplace modifications, and return-to-work planning.</p></div>
     <div class="spec-card"><div class="sc-icon"><svg viewBox="0 0 21 21" fill="none"><rect x="2" y="4.5" width="17" height="13" rx="2" stroke="#009688" stroke-width="1.5"/><line x1="2" y1="8.5" x2="19" y2="8.5" stroke="#009688" stroke-width="1.3"/><line x1="6.5" y1="2" x2="6.5" y2="5" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/><line x1="14.5" y1="2" x2="14.5" y2="5" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Injury Mgmt Advisors</h3><p>Experienced IMAs for insurers, self-insurers, and large employers managing complex claims.</p></div>
     <div class="spec-card"><div class="sc-icon"><svg viewBox="0 0 21 21" fill="none"><rect x="2" y="5.5" width="17" height="13" rx="2" stroke="#009688" stroke-width="1.5"/><path d="M13 5.5V4a2 2 0 0 0-2-2H9.5a2 2 0 0 0-2 2v1.5" stroke="#009688" stroke-width="1.5"/><line x1="10.5" y1="10.5" x2="10.5" y2="13.5" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/><line x1="9" y1="12" x2="12" y2="12" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Employment Consultants</h3><p>Vocational rehabilitation and job placement for injured or at-risk workers returning to the workforce.</p></div>
-    <div class="spec-card"><div class="sc-icon"><svg viewBox="0 0 21 21" fill="none"><path d="M10.5 2v2.5M10.5 16.5V19M4.5 4.5l1.8 1.8M14.7 14.7l1.8 1.8M2 10.5h2.5M16.5 10.5H19M4.5 16.5l1.8-1.8M14.7 6.3l1.8-1.8" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/><circle cx="10.5" cy="10.5" r="3.5" stroke="#009688" stroke-width="1.5"/></svg></div><h3>Exercise Scientists</h3><p>AEPs and exercise scientists for injury rehabilitation, return-to-work programs, and corporate health.</p></div>
+    <div class="spec-card"><div class="sc-icon"><svg viewBox="0 0 21 21" fill="none"><path d="M10.5 2v2.5M10.5 16.5V19M4.5 4.5l1.8 1.8M14.7 14.7l1.8 1.8M2 10.5h2.5M16.5 10.5H19M4.5 16.5l1.8-1.8M14.7 6.3l1.8-1.8" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/><circle cx="10.5" cy="10.5" r="3.5" stroke="#009688" stroke-width="1.5"/></svg></div><h3>Exercise Physiologists</h3><p>AEPs and exercise physiologists for injury rehabilitation, return-to-work programs, and corporate health.</p></div>
     <div class="spec-card"><div class="sc-icon"><svg viewBox="0 0 21 21" fill="none"><circle cx="10.5" cy="10.5" r="9" stroke="#009688" stroke-width="1.5"/><path d="M8 9.5a2.5 2.5 0 0 1 5 1c0 2-2.5 2.5-2.5 2.5" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/><circle cx="10.5" cy="15.5" r="0.7" fill="#009688"/></svg></div><h3>Psychologists</h3><p>Registered psychologists for WorkCover, employee assistance programs, and occupational health.</p></div>
     <div class="spec-card"><div class="sc-icon"><svg viewBox="0 0 21 21" fill="none"><polyline points="15 2 19 6 15 10" stroke="#009688" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 10.5V9a4 4 0 0 1 4-4h13" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/><polyline points="6 18 2 14 6 10" stroke="#009688" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 10.5V12a4 4 0 0 1-4 4H2" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Rehab Counsellors</h3><p>Return-to-work, vocational planning, and psychosocial support specialists across all insurance channels.</p></div>
     <div class="spec-card"><div class="sc-icon"><svg viewBox="0 0 21 21" fill="none"><line x1="10.5" y1="2" x2="10.5" y2="19" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/><line x1="2" y1="10.5" x2="19" y2="10.5" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/><rect x="2" y="2" width="17" height="17" rx="4" stroke="#009688" stroke-width="1.5"/></svg></div><h3>Physiotherapists</h3><p>Physios with occupational rehabilitation and workplace injury management experience.</p></div>
@@ -1123,9 +1029,9 @@ nav{
   <footer class="site-footer" style="margin-top:0;">
     <div class="sf-grid">
       <div><div class="sf-brand-name">Allied<em>Scout</em></div><div class="sf-brand-sub">Recruitment Specialists</div><p class="sf-brand-desc">Australia's specialist recruiter for occupational rehabilitation and allied health. Perth-based, placing nationally.</p></div>
-      <div class="sf-col"><h5>Pages</h5><ul><li onclick="go('home')">Home</li><li onclick="go('how')">How It Works</li><li onclick="go('why')">Why Us</li><li onclick="go('blog')">Blog</li><li onclick="go('contact')">Contact</li></ul></div>
-      <div class="sf-col"><h5>Specialisms</h5><ul><li>Rehabilitation Consultants</li><li>Occupational Therapists</li><li>Injury Mgmt Advisors</li><li>Employment Consultants</li><li>Exercise Scientists</li><li>Psychologists</li></ul></div>
-      <div class="sf-col"><h5>Contact</h5><ul><li>hello@alliedscout.com.au</li><li>0400 000 000</li><li>Perth, WA</li><li>Australia-wide</li></ul></div>
+      <div class="sf-col"><h5>Pages</h5><ul><li onclick="go('home')">Home</li><li onclick="go('how')">How It Works</li><li onclick="go('why')">Why Us</li><li onclick="go('contact')">Contact</li></ul></div>
+      <div class="sf-col"><h5>Specialisms</h5><ul><li onclick="go('specialisms')" style="cursor:pointer;">Rehabilitation Consultants</li><li onclick="go('specialisms')" style="cursor:pointer;">Occupational Therapists</li><li onclick="go('specialisms')" style="cursor:pointer;">Injury Mgmt Advisors</li><li onclick="go('specialisms')" style="cursor:pointer;">Employment Consultants</li><li onclick="go('specialisms')" style="cursor:pointer;">Exercise Physiologists</li><li onclick="go('specialisms')" style="cursor:pointer;">Psychologists</li></ul></div>
+      <div class="sf-col"><h5>Contact</h5><ul><li>contact@alliedscout.com.au</li><li>Perth, WA</li><li>Australia-wide</li></ul></div>
     </div>
     <div class="sf-bottom"><span>© 2025 Allied Scout. All rights reserved.</span><span>Perth, WA · Australia-wide</span></div>
   </footer>
@@ -1141,13 +1047,6 @@ nav{
       <p class="whc-sub">Occupational rehabilitation is all we do. Not one of fifteen sectors — the only one. That's the difference between a recruiter who understands your work and one who has to Google it.</p>
     </div>
     <div class="whc-right">
-      <div class="eyebrow eyebrow-white" style="margin-bottom:20px;">By the numbers</div>
-      <div class="why-mini">
-        <div><div class="wm-n">48<em>hr</em></div><div class="wm-l">Avg. shortlist delivery</div></div>
-        <div><div class="wm-n">WA<em>→</em></div><div class="wm-l">Perth-based, national</div></div>
-        <div><div class="wm-n">0<em>$</em></div><div class="wm-l">Cost if we can't deliver</div></div>
-        <div><div class="wm-n">8<em>+</em></div><div class="wm-l">Specialisms covered</div></div>
-      </div>
       <div class="whc-cta">
         <button class="btn btn-teal btn-lg" onclick="go('contact')">Work With Us →</button>
       </div>
@@ -1158,118 +1057,26 @@ nav{
   <div class="why-points">
     <div class="wp"><div class="wp-check"><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5 6.5-7" stroke="#009688" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Sector fluency</h3><p>We know SIRA, WorkSafe, Comcare, and CTP. We understand caseload structures, WorkCover obligations, and the difference between roles — without being briefed from scratch every time.</p></div>
     <div class="wp"><div class="wp-check"><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5 6.5-7" stroke="#009688" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>A real network</h3><p>Built over years in WA's allied health community and extended nationally. We reach passive candidates who aren't on Seek — the people you actually want to hire, not the people who are actively looking.</p></div>
-    <div class="wp"><div class="wp-check"><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5 6.5-7" stroke="#009688" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Quality shortlists</h3><p>Every candidate is personally screened and interviewed by us before you see them. You receive 3–5 people genuinely worth your time — not 30 maybes to sort through during an already busy week.</p></div>
-    <div class="wp"><div class="wp-check"><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5 6.5-7" stroke="#009688" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Free replacement</h3><p>If a placement doesn't work out, we find a replacement. No fee, no argument, no awkward conversation. This is how we hold ourselves accountable to every hire we make on your behalf.</p></div>
+    <div class="wp"><div class="wp-check"><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5 6.5-7" stroke="#009688" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Quality shortlists</h3><p>We speak to and assess candidates before presenting them to you. You receive candidates worth your time — not a pile of applications to sort through yourself.</p></div>
+    <div class="wp"><div class="wp-check"><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5 6.5-7" stroke="#009688" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Free replacement</h3><p>If a placement doesn't work out, we work with you to find a replacement at no additional charge.</p></div>
     <div class="wp"><div class="wp-check"><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5 6.5-7" stroke="#009688" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Transparent fees</h3><p>Fees are discussed directly with you — not listed on the website because every engagement is different. No hidden costs, no percentage creep on salary increases, no invoice surprises.</p></div>
     <div class="wp highlight"><div class="wp-check"><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5 6.5-7" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Perth-founded</h3><p>We started in WA's OC rehab community and extended nationally. Our roots mean we understand local providers, local candidates, and what the WA market actually looks like on the ground.</p></div>
-  </div>
-
-  <div class="testimonial-card">
-    <div>
-      <blockquote class="tc-q">"Every other recruiter sent us generalists who'd never heard of a Rehab Consultant. Allied Scout sent us three people worth interviewing within two days — all with exactly the right background and WorkCover experience."</blockquote>
-      <div class="tc-a">
-        <strong>Sarah Mitchell</strong>
-        <span>Operations Manager — Occupational Rehabilitation Provider, Perth WA</span>
-      </div>
-    </div>
-    <div class="tc-badge"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3L3 10v7c0 10 7 19 17 22 10-3 17-12 17-22v-7L20 3z" fill="rgba(255,255,255,0.18)"/><path d="M13 20l5.5 5.5 10-11" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
   </div>
 
   <footer class="site-footer" style="margin-top:0;">
     <div class="sf-grid">
       <div><div class="sf-brand-name">Allied<em>Scout</em></div><div class="sf-brand-sub">Recruitment Specialists</div><p class="sf-brand-desc">Australia's specialist recruiter for occupational rehabilitation and allied health. Perth-based, placing nationally.</p></div>
-      <div class="sf-col"><h5>Pages</h5><ul><li onclick="go('home')">Home</li><li onclick="go('how')">How It Works</li><li onclick="go('specialisms')">Specialisms</li><li onclick="go('blog')">Blog</li><li onclick="go('contact')">Contact</li></ul></div>
-      <div class="sf-col"><h5>Specialisms</h5><ul><li>Rehabilitation Consultants</li><li>Occupational Therapists</li><li>Injury Mgmt Advisors</li><li>Employment Consultants</li><li>Exercise Scientists</li><li>Psychologists</li></ul></div>
-      <div class="sf-col"><h5>Contact</h5><ul><li>hello@alliedscout.com.au</li><li>0400 000 000</li><li>Perth, WA</li><li>Australia-wide</li></ul></div>
+      <div class="sf-col"><h5>Pages</h5><ul><li onclick="go('home')">Home</li><li onclick="go('how')">How It Works</li><li onclick="go('specialisms')">Specialisms</li><li onclick="go('contact')">Contact</li></ul></div>
+      <div class="sf-col"><h5>Specialisms</h5><ul><li onclick="go('specialisms')" style="cursor:pointer;">Rehabilitation Consultants</li><li onclick="go('specialisms')" style="cursor:pointer;">Occupational Therapists</li><li onclick="go('specialisms')" style="cursor:pointer;">Injury Mgmt Advisors</li><li onclick="go('specialisms')" style="cursor:pointer;">Employment Consultants</li><li onclick="go('specialisms')" style="cursor:pointer;">Exercise Physiologists</li><li onclick="go('specialisms')" style="cursor:pointer;">Psychologists</li></ul></div>
+      <div class="sf-col"><h5>Contact</h5><ul><li>contact@alliedscout.com.au</li><li>Perth, WA</li><li>Australia-wide</li></ul></div>
     </div>
     <div class="sf-bottom"><span>© 2025 Allied Scout. All rights reserved.</span><span>Perth, WA · Australia-wide</span></div>
   </footer>
 </div>
 
-<!-- ══════════════════════════════════════════
-     BLOG
-══════════════════════════════════════════ -->
-<div id="p-blog" class="page">
-  <div class="blog-header" style="padding:40px 56px 0;">
-    <div class="eyebrow" style="margin-bottom:14px;">Resources &amp; Insights</div>
-    <h1 class="h-section" style="margin-bottom:14px;">Guides for <em>rehab providers</em></h1>
-    <p class="body-lg" style="max-width:540px;">Practical hiring advice, market insights, and sector updates for occupational rehabilitation and allied health providers across Australia.</p>
-  </div>
 
-  <div class="blog-full-grid">
-    <div class="blog-card-full">
-      <div class="blog-img-full"><div class="blog-img-placeholder">[ Article Image — Placeholder ]</div></div>
-      <div class="blog-body-full">
-        <div class="blog-meta"><span class="blog-category">Hiring Advice</span><span class="blog-date">Coming soon</span></div>
-        <div class="blog-ttl">How to Write a Brief That Gets You the Right Rehab Consultant</div>
-        <div class="blog-exc">A good brief saves weeks of back-and-forth. Here's exactly what to include when engaging a specialist recruiter for your OC rehab team.</div>
-        <div class="blog-read">Read article →</div>
-      </div>
-    </div>
-    <div class="blog-card-full">
-      <div class="blog-img-full"><div class="blog-img-placeholder">[ Article Image — Placeholder ]</div></div>
-      <div class="blog-body-full">
-        <div class="blog-meta"><span class="blog-category">Market Insights</span><span class="blog-date">Coming soon</span></div>
-        <div class="blog-ttl">The OT Shortage in Australia: What Rehab Providers Need to Know in 2025</div>
-        <div class="blog-exc">Demand for Occupational Therapists is outpacing supply. Here's what's driving it and how to position your practice to attract the right talent.</div>
-        <div class="blog-read">Read article →</div>
-      </div>
-    </div>
-    <div class="blog-card-full">
-      <div class="blog-img-full"><div class="blog-img-placeholder">[ Article Image — Placeholder ]</div></div>
-      <div class="blog-body-full">
-        <div class="blog-meta"><span class="blog-category">WorkCover</span><span class="blog-date">Coming soon</span></div>
-        <div class="blog-ttl">WorkCover WA vs National Schemes: Implications for Allied Health Hiring</div>
-        <div class="blog-exc">Different schemes mean different role requirements. Understanding the landscape helps you hire faster and with better fit for your practice.</div>
-        <div class="blog-read">Read article →</div>
-      </div>
-    </div>
-    <div class="blog-card-full">
-      <div class="blog-img-full"><div class="blog-img-placeholder">[ Article Image — Placeholder ]</div></div>
-      <div class="blog-body-full">
-        <div class="blog-meta"><span class="blog-category">Sector News</span><span class="blog-date">Coming soon</span></div>
-        <div class="blog-ttl">Allied Health Salary Benchmarks 2025: What Are Rehab Professionals Earning?</div>
-        <div class="blog-exc">Up-to-date salary data for Rehabilitation Consultants, OTs, IMAs, and more — across WA and nationally.</div>
-        <div class="blog-read">Read article →</div>
-      </div>
-    </div>
-    <div class="blog-card-full">
-      <div class="blog-img-full"><div class="blog-img-placeholder">[ Article Image — Placeholder ]</div></div>
-      <div class="blog-body-full">
-        <div class="blog-meta"><span class="blog-category">Hiring Advice</span><span class="blog-date">Coming soon</span></div>
-        <div class="blog-ttl">5 Signs Your Rehab Practice Needs a Specialist Recruiter (Not a Job Board)</div>
-        <div class="blog-exc">If you've been posting on Seek for weeks with poor results, it might be time to change your approach. Here's how to tell.</div>
-        <div class="blog-read">Read article →</div>
-      </div>
-    </div>
-    <div class="blog-card-full">
-      <div class="blog-img-full"><div class="blog-img-placeholder">[ Article Image — Placeholder ]</div></div>
-      <div class="blog-body-full">
-        <div class="blog-meta"><span class="blog-category">Allied Health</span><span class="blog-date">Coming soon</span></div>
-        <div class="blog-ttl">Perth's Allied Health Market: What's Driving Demand for OC Rehab Professionals in WA?</div>
-        <div class="blog-exc">Western Australia's occupational rehabilitation sector is growing fast. Here's what's behind the demand surge and what it means for hiring.</div>
-        <div class="blog-read">Read article →</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="placeholder" style="margin:0 56px 56px;">
-    <div class="placeholder-label">Placeholder — Blog Content</div>
-    <div class="placeholder-desc">Articles to be written and published as Allied Scout builds its content library. Topics will cover hiring advice, market insights, WorkCover updates, and allied health sector news.</div>
-  </div>
-
-  <footer class="site-footer" style="margin-top:0;">
-    <div class="sf-grid">
-      <div><div class="sf-brand-name">Allied<em>Scout</em></div><div class="sf-brand-sub">Recruitment Specialists</div><p class="sf-brand-desc">Australia's specialist recruiter for occupational rehabilitation and allied health. Perth-based, placing nationally.</p></div>
-      <div class="sf-col"><h5>Pages</h5><ul><li onclick="go('home')">Home</li><li onclick="go('how')">How It Works</li><li onclick="go('specialisms')">Specialisms</li><li onclick="go('why')">Why Us</li><li onclick="go('contact')">Contact</li></ul></div>
-      <div class="sf-col"><h5>Specialisms</h5><ul><li>Rehabilitation Consultants</li><li>Occupational Therapists</li><li>Injury Mgmt Advisors</li><li>Employment Consultants</li><li>Exercise Scientists</li><li>Psychologists</li></ul></div>
-      <div class="sf-col"><h5>Contact</h5><ul><li>hello@alliedscout.com.au</li><li>0400 000 000</li><li>Perth, WA</li><li>Australia-wide</li></ul></div>
-    </div>
-    <div class="sf-bottom"><span>© 2025 Allied Scout. All rights reserved.</span><span>Allied Health Recruitment Perth · OC Rehab Recruitment Australia</span></div>
-  </footer>
-</div>
-
-<!-- ══════════════════════════════════════════
+<!-- ═══════════════════════════════════════════════════════
+     CONTACT
      CONTACT
 ══════════════════════════════════════════ -->
 <div id="p-contact" class="page">
@@ -1277,36 +1084,33 @@ nav{
     <div class="ch-left">
       <div class="eyebrow eyebrow-white" style="margin-bottom:14px;">Get in Touch</div>
       <h1>Ready to find your next <em>allied health professional?</em></h1>
-      <p>Tell us what you need. We'll respond within one business day. No pitch, no pressure — just a straightforward conversation about how we can help.</p>
-    </div>
-    <div class="ch-right">
-      <div class="ch-stat-n">1 day</div>
-      <div class="ch-stat-l">Response guarantee</div>
+      <p>Tell us what you need. No pitch, no pressure — just a straightforward conversation about how we can help.</p>
     </div>
   </div>
 
-  <div class="contact-body">
-    <!-- Form -->
+  <div class="contact-body" style="grid-template-columns:1fr 1fr;max-width:1100px;">
+    <!-- Working Formspree form -->
     <div class="form-card">
       <div class="form-card-title">Send an Enquiry</div>
-      <form class="contact-form" onsubmit="submitForm(event)" novalidate>
+      <form action="https://formspree.io/f/mdabojqw" method="POST" class="contact-form">
+        <input type="hidden" name="_subject" value="New Allied Scout Enquiry">
         <div class="form-row">
-          <div class="form-group"><label for="f-name">Your Name</label><input id="f-name" type="text" placeholder="e.g. Sarah Mitchell" autocomplete="name"></div>
-          <div class="form-group"><label for="f-org">Organisation</label><input id="f-org" type="text" placeholder="e.g. Perth Rehab Group" autocomplete="organization"></div>
+          <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="e.g. Sarah Mitchell" required autocomplete="name"></div>
+          <div class="form-group"><label>Organisation</label><input type="text" name="organisation" placeholder="e.g. Perth Rehab Group" autocomplete="organization"></div>
         </div>
         <div class="form-row">
-          <div class="form-group"><label for="f-email">Email Address</label><input id="f-email" type="email" placeholder="hello@yourorg.com.au" autocomplete="email"></div>
-          <div class="form-group"><label for="f-phone">Phone Number</label><input id="f-phone" type="tel" placeholder="04XX XXX XXX" autocomplete="tel"></div>
+          <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="hello@yourorg.com.au" required autocomplete="email"></div>
+          <div class="form-group"><label>State / Location</label><input type="text" name="location" placeholder="e.g. Perth, WA"></div>
         </div>
         <div class="form-group">
-          <label for="f-role">Role You're Looking to Fill</label>
-          <select id="f-role">
+          <label>Role You're Looking to Fill</label>
+          <select name="role">
             <option value="" disabled selected>Select a specialism</option>
             <option>Rehabilitation Consultant</option>
             <option>Occupational Therapist</option>
             <option>Injury Management Advisor</option>
             <option>Employment Consultant</option>
-            <option>Exercise Scientist / AEP</option>
+            <option>Exercise Physiologist</option>
             <option>Psychologist</option>
             <option>Rehab Counsellor</option>
             <option>Physiotherapist</option>
@@ -1314,10 +1118,10 @@ nav{
           </select>
         </div>
         <div class="form-group">
-          <label for="f-detail">Location &amp; Details</label>
-          <textarea id="f-detail" placeholder="State, city, experience level, timeline, caseload size — anything that helps us find the right person faster."></textarea>
+          <label>Anything else we should know?</label>
+          <textarea name="message" placeholder="Experience level, timeline, caseload size — anything that helps us find the right person faster."></textarea>
         </div>
-        <button type="submit" class="btn-submit" id="f-sub">Send Enquiry →</button>
+        <button type="submit" class="btn-submit">Send Enquiry →</button>
       </form>
     </div>
 
@@ -1325,11 +1129,9 @@ nav{
     <div class="details-card">
       <div class="dc-title">Or reach us directly</div>
       <div class="detail-items">
-        <div class="di"><div class="di-label">Email</div><div class="di-val">hello@alliedscout.com.au</div></div>
-        <div class="di"><div class="di-label">Call Martin directly</div><div class="di-val">0400 000 000</div></div>
+        <div class="di"><div class="di-label">Email</div><div class="di-val">contact@alliedscout.com.au</div></div>
         <div class="di"><div class="di-label">Based in</div><div class="di-val">Perth, Western Australia</div></div>
         <div class="di"><div class="di-label">Placing across</div><div class="di-val">All states &amp; territories, Australia-wide</div></div>
-        <div class="di"><div class="di-label">Response time</div><div class="di-val">Within 1 business day</div></div>
         <div class="di"><div class="di-label">Fees</div><div class="di-val">Discussed directly — not listed online</div></div>
       </div>
       <div class="details-guarantee">
@@ -1345,9 +1147,9 @@ nav{
   <footer class="site-footer" style="margin-top:0;">
     <div class="sf-grid">
       <div><div class="sf-brand-name">Allied<em>Scout</em></div><div class="sf-brand-sub">Recruitment Specialists</div><p class="sf-brand-desc">Australia's specialist recruiter for occupational rehabilitation and allied health. Perth-based, placing nationally.</p></div>
-      <div class="sf-col"><h5>Pages</h5><ul><li onclick="go('home')">Home</li><li onclick="go('how')">How It Works</li><li onclick="go('specialisms')">Specialisms</li><li onclick="go('why')">Why Us</li><li onclick="go('blog')">Blog</li></ul></div>
-      <div class="sf-col"><h5>Specialisms</h5><ul><li>Rehabilitation Consultants</li><li>Occupational Therapists</li><li>Injury Mgmt Advisors</li><li>Employment Consultants</li><li>Exercise Scientists</li><li>Psychologists</li></ul></div>
-      <div class="sf-col"><h5>Contact</h5><ul><li>hello@alliedscout.com.au</li><li>0400 000 000</li><li>Perth, WA</li><li>Australia-wide</li></ul></div>
+      <div class="sf-col"><h5>Pages</h5><ul><li onclick="go('home')">Home</li><li onclick="go('how')">How It Works</li><li onclick="go('specialisms')">Specialisms</li><li onclick="go('why')">Why Us</li></ul></div>
+      <div class="sf-col"><h5>Specialisms</h5><ul><li onclick="go('specialisms')" style="cursor:pointer;">Rehabilitation Consultants</li><li onclick="go('specialisms')" style="cursor:pointer;">Occupational Therapists</li><li onclick="go('specialisms')" style="cursor:pointer;">Injury Mgmt Advisors</li><li onclick="go('specialisms')" style="cursor:pointer;">Employment Consultants</li><li onclick="go('specialisms')" style="cursor:pointer;">Exercise Physiologists</li><li onclick="go('specialisms')" style="cursor:pointer;">Psychologists</li></ul></div>
+      <div class="sf-col"><h5>Contact</h5><ul><li>contact@alliedscout.com.au</li><li>Perth, WA</li><li>Australia-wide</li></ul></div>
     </div>
     <div class="sf-bottom"><span>© 2025 Allied Scout. All rights reserved.</span><span>Allied Health Recruitment Perth · OC Rehab Recruitment Australia</span></div>
   </footer>
@@ -1376,12 +1178,6 @@ function go(id) {
   cur = id;
 }
 
-function submitForm(e) {
-  e.preventDefault();
-  const btn = document.getElementById('f-sub');
-  btn.textContent = '✓ Sent — we\'ll be in touch within one business day';
-  btn.disabled = true;
-}
 
 // Scroll reveal
 function initReveal(container) {
